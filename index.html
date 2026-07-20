@@ -3,218 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анастасия | Технический партнёр для бизнеса</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Анастасия — разработчик Telegram-ботов, сайтов и 1С. Автоматизация бизнеса под ключ: боты для записи, автоворонки, таплинки, лендинги, интеграции.">
+    <meta name="keywords" content="telegram бот, разработка ботов, таплинк, лендинг, 1с, автоматизация бизнеса, сайт визитка, автоворонка">
+    <meta property="og:title" content="Анастасия — Разработка Telegram-ботов и сайтов">
+    <meta property="og:description" content="Автоматизирую бизнес: Telegram-боты, сайты-таплинки, 1С. Под ключ, от идеи до запуска.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hawkey-prog.github.io">
+    <title>Анастасия Райцева — Telegram-боты, сайты, 1С | Технический партнёр для бизнеса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="profile-card">
-                <div class="profile">
-                    <img src="https://ltdfoto.ru/images/2026/02/05/AVATAR_MOI.jpg" alt="Анастасия" class="avatar">
-                    <h1>Анастасия</h1>
-                    <p class="subtitle">Технический партнёр для роста вашего бизнеса</p>
-                    <p class="bio">Разрабатываю системы на 1С, создаю Telegram-боты и продающие сайты. Превращаю технические задачи в понятные решения.</p>
-                </div>
-                
-                <div class="action-buttons">
+
+    <!-- Шапка / Hero -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <div class="hero-badge">⚡ Доступна для новых проектов</div>
+                <h1>Анастасия<span class="hero-accent">.</span></h1>
+                <p class="hero-subtitle">Разработчик Telegram-ботов, сайтов и 1С</p>
+                <p class="hero-description">Превращаю бизнес-задачи в работающие цифровые инструменты. От идеи до запуска — в одних руках.</p>
+                <div class="hero-buttons">
                     <a href="https://t.me/hawkey_17" class="btn btn-primary" target="_blank">
                         <i class="fab fa-telegram"></i> Обсудить проект
                     </a>
-                    
-                    <a href="#services" class="btn btn-secondary">
-                        <i class="fas fa-code"></i> Мои услуги
+                    <a href="#services" class="btn btn-outline">
+                        <i class="fas fa-arrow-down"></i> Мои услуги
                     </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">года фриланса</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">30+</span>
+                        <span class="stat-label">проектов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">14</span>
+                        <span class="stat-label">дней поддержки</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="hero-card-body">
+                        <div class="code-line"><span class="code-key">const</span> developer = {</div>
+                        <div class="code-line code-indent">name: <span class="code-str">'Анастасия'</span>,</div>
+                        <div class="code-line code-indent">stack: [<span class="code-str">'Python'</span>, <span class="code-str">'1С'</span>, <span class="code-str">'Telegram API'</span>],</div>
+                        <div class="code-line code-indent">focus: <span class="code-str">'Автоматизация бизнеса'</span>,</div>
+                        <div class="code-line code-indent">available: <span class="code-bool">true</span></div>
+                        <div class="code-line">}</div>
+                        <div class="code-cursor"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="main-content">
-        <div class="container">
-            <!-- Услуги с горизонтальной прокруткой -->
-            <section class="content-block" id="services">
-                <h2>Мои услуги</h2>
-                
-                <div class="services-scroll-container">
-                    <div class="scroll-nav prev">
-                        <i class="fas fa-chevron-left"></i>
-                    </div>
-                    
-                    <div class="services-scroll-wrapper" id="services-scroll">
-                        <div class="service-item">
-                            <div class="service-icon"><i class="fas fa-palette"></i></div>
-                            <div class="service-text">
-                                <h3>Сайты-визитки</h3>
-                                <span class="price">от 7 000 ₽</span>
-                                <p>Сайты, которые работают на ваш бизнес 24/7.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-item">
-                            <div class="service-icon"><i class="fab fa-telegram"></i></div>
-                            <div class="service-text">
-                                <h3>Telegram-боты</h3>
-                                <span class="price">от 5 000 ₽</span>
-                                <p>Автоматизация коммуникации с клиентами.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-item">
-                            <div class="service-icon"><i class="fas fa-database"></i></div>
-                            <div class="service-text">
-                                <h3>Разработка 1С</h3>
-                                <span class="price">1 500 ₽/час</span>
-                                <p>Решение бизнес-задач и доработки.</p>
-                            </div>
-                        </div>
-            
-                        <div class="service-item">
-                            <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
-                            <div class="service-text">
-                                <h3>Интернет-магазины</h3>
-                                <span class="price">от 15 000 ₽</span>
-                                <p>Полноценные онлайн-магазины с каталогом и корзиной.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="scroll-nav next">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                    
-                    <div class="scroll-indicator" id="services-indicator"></div>
-                </div>
-            </section>
+    <main>
 
-            <!-- Процесс работы с горизонтальной прокруткой -->
-            <section class="content-block">
-                <h2>Процесс работы</h2>
-                
-                <div class="services-scroll-container">
-                    <div class="scroll-nav prev">
-                        <i class="fas fa-chevron-left"></i>
+        <!-- Услуги -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">УСЛУГИ</span>
+                    <h2>Что я делаю</h2>
+                    <p>Полный цикл разработки — от технического задания до запуска и поддержки</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fab fa-telegram"></i></div>
+                        <h3>Telegram-боты</h3>
+                        <div class="service-price">от 5 000 ₽</div>
+                        <ul class="service-list">
+                            <li>Запись на услуги 24/7</li>
+                            <li>Автоворонки продаж</li>
+                            <li>Рассылки и напоминания</li>
+                            <li>Приём оплаты в боте</li>
+                            <li>Интеграции: CRM, таблицы, базы</li>
+                        </ul>
+                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    
-                    <div class="services-scroll-wrapper" id="process-scroll">
-                        <div class="process-step">
-                            <div class="step-number">01</div>
+
+                    <div class="service-card service-card-accent">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Сайты и таплинки</h3>
+                        <div class="service-price">от 5 000 ₽</div>
+                        <ul class="service-list">
+                            <li>Лендинги под рекламу</li>
+                            <li>Сайты-визитки</li>
+                            <li>Онлайн-меню для кафе</li>
+                            <li>Адаптивный дизайн</li>
+                            <li>Кнопки связи в один клик</li>
+                        </ul>
+                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <h3>Разработка 1С</h3>
+                        <div class="service-price">1 500 ₽/час</div>
+                        <ul class="service-list">
+                            <li>Доработка конфигураций</li>
+                            <li>УТ, УНФ, БП, ЗУП</li>
+                            <li>Интеграция 1С с Telegram</li>
+                            <li>Разовые задачи и поддержка</li>
+                            <li>Автоматизация рутины</li>
+                        </ul>
+                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h3>Интернет-магазины</h3>
+                        <div class="service-price">от 15 000 ₽</div>
+                        <ul class="service-list">
+                            <li>Каталог с корзиной</li>
+                            <li>Оформление заказа онлайн</li>
+                            <li>Приём платежей</li>
+                            <li>Уведомления в Telegram</li>
+                            <li>Адаптив под мобильные</li>
+                        </ul>
+                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс работы -->
+        <section class="section section-dark" id="process">
+            <div class="container">
+                <div class="section-header section-header-light">
+                    <span class="section-tag">ПРОЦЕСС</span>
+                    <h2>Как мы будем работать</h2>
+                    <p>Прозрачный процесс — вы всегда знаете, на каком этапе проект</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-item">
+                        <div class="process-num">01</div>
+                        <div class="process-body">
                             <h3>Обсуждение</h3>
-                            <p>Бесплатная консультация 30 минут. Определяем цели и задачи проекта.</p>
+                            <p>Бесплатная консультация 30 минут. Определяем цели, задачи и рамки проекта.</p>
                         </div>
-                        
-                        <div class="process-step">
-                            <div class="step-number">02</div>
-                            <h3>Анализ</h3>
-                            <p>Изучение задачи и предложение решения. Создание технического задания.</p>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-num">02</div>
+                        <div class="process-body">
+                            <h3>Анализ и ТЗ</h3>
+                            <p>Изучаю задачу, предлагаю решение. Составляем техническое задание.</p>
                         </div>
-                        
-                        <div class="process-step">
-                            <div class="step-number">03</div>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-num">03</div>
+                        <div class="process-body">
                             <h3>Разработка</h3>
-                            <p>Согласование этапов и выполнение работы. Регулярные отчеты о прогрессе.</p>
+                            <p>Пишу код, согласую этапы. Регулярные отчёты о прогрессе.</p>
                         </div>
-                        
-                        <div class="process-step">
-                            <div class="step-number">04</div>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-num">04</div>
+                        <div class="process-body">
                             <h3>Запуск</h3>
-                            <p>Тестирование, передача проекта и обучение. Техническая поддержка.</p>
+                            <p>Тестирую, передаю проект, обучаю пользоваться.</p>
                         </div>
-                        
-                        <div class="process-step">
-                            <div class="step-number">05</div>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-num">05</div>
+                        <div class="process-body">
                             <h3>Поддержка</h3>
-                            <p>Сопровождение в течении 14 дней после сдачи проекта</p>
-                        </div>
-                    </div>
-                    
-                    <div class="scroll-nav next">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                    
-                    <div class="scroll-indicator" id="process-indicator"></div>
-                </div>
-            </section>
-
-            <!-- FAQ -->
-            <section class="content-block">
-                <h2>Частые вопросы</h2>
-                
-                <div class="faq-item">
-                    <h3>Сколько времени занимает создание сайта?</h3>
-                    <p>3-5 дней от обсуждения до запуска.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Можно ли потом что-то поменять самому?</h3>
-                    <p>Да, обучу управлению или сделаю правки за вас.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Работаете с другими городами?</h3>
-                    <p>Да, все коммуникации онлайн.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Если у меня нет ТЗ, все равно работаете?</h3>
-                    <p>Если нет ТЗ, то составим его вместе.</p>
-                </div>
-            </section>
-
-            <!-- Контакты -->
-            <section class="content-block" id="contacts">
-                <h2>Контакты</h2>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fab fa-telegram"></i>
-                        <div>
-                            <h3>Telegram</h3>
-                            <a href="https://t.me/hawkey_17" target="_blank">@hawkey_17</a>
-                            <p>Отвечаю в течение часа</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:nastushkarom@gmail.com">nastushkarom@gmail.com</a>
-                            <p>Ответ в течение дня</p>
+                            <p>Сопровождаю 14 дней после сдачи. Правки и вопросы — на связи.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- CTA -->
-            <section class="cta-block">
-                <h2>Готовы к сотрудничеству?</h2>
-                <p>Напишите мне в Telegram, чтобы обсудить ваш проект</p>
-                <a href="https://t.me/hawkey_17" class="cta-btn" target="_blank">
-                    <i class="fab fa-telegram"></i> Обсудить проект
-                </a>
-            </section>
-        </div>
+        <!-- Для кого -->
+        <section class="section" id="audience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">КЛИЕНТЫ</span>
+                    <h2>Для кого я работаю</h2>
+                    <p>Помогаю бизнесу зарабатывать больше через автоматизацию</p>
+                </div>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-emoji">💇</div>
+                        <h3>Салоны и SPA</h3>
+                        <p>Запись 24/7, напоминания, снижение неявок</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-emoji">☕</div>
+                        <h3>Кафе и рестораны</h3>
+                        <p>Онлайн-меню, заказ доставки, таплинк</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-emoji">🎓</div>
+                        <h3>Эксперты и школы</h3>
+                        <p>Автоворонки, продажа курсов, прогрев</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-emoji">🛍</div>
+                        <h3>Магазины</h3>
+                        <p>Каталог в Telegram, заказы, уведомления</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-emoji">🔧</div>
+                        <h3>Частные мастера</h3>
+                        <p>Запись, прайс, портфолио в одном боте</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-emoji">🏢</div>
+                        <h3>Бизнес с 1С</h3>
+                        <p>Доработки, интеграции, автоматизация</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-light" id="faq">
+            <div class="container container-narrow">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2>Частые вопросы</h2>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Сколько времени занимает разработка?</summary>
+                        <p>Простой бот или таплинк — 3–5 дней. Сложный проект с интеграциями — 1–2 недели. Точные сроки называю после обсуждения задачи.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Можно ли что-то поменять после запуска?</summary>
+                        <p>Да. 14 дней поддержки бесплатно после сдачи. Дальше — по договорённости. Также могу обучить вас самостоятельному внесению правок.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Работаете с другими городами?</summary>
+                        <p>Да, работаю полностью дистанционно. Вся коммуникация — через Telegram. Созвон по видео при необходимости.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Если у меня нет ТЗ?</summary>
+                        <p>Не проблема. Разберём вашу задачу вместе, я помогу составить ТЗ. Это бесплатно и ни к чему не обязывает.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Как происходит оплата?</summary>
+                        <p>Обычно: 50% предоплата, 50% после сдачи. Для крупных проектов — поэтапная оплата. Работаю по договорённости.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Готовы автоматизировать бизнес?</h2>
+                    <p>Напишите мне в Telegram — обсудим задачу за 15 минут. Бесплатно и ни к чему не обязывает.</p>
+                    <a href="https://t.me/hawkey_17" class="btn btn-primary btn-large" target="_blank">
+                        <i class="fab fa-telegram"></i> Написать в Telegram
+                    </a>
+                    <div class="cta-info">
+                        <span><i class="far fa-clock"></i> Отвечаю 10:00–21:00 МСК</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Дистанционно, по всей России</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Подвал -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Анастасия<span>Технический партнёр</span></div>
-                <div class="footer-links">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">Анастасия Райцева</div>
+                    <p>Технический партнёр для роста вашего бизнеса</p>
+                </div>
+                <div class="footer-nav">
                     <a href="#services">Услуги</a>
+                    <a href="#process">Процесс</a>
+                    <a href="#faq">Вопросы</a>
                     <a href="https://t.me/hawkey_17" target="_blank">Telegram</a>
                     <a href="mailto:nastushkarom@gmail.com">Email</a>
                 </div>
-                <p class="footer-copyright">© <span id="current-year">2024</span> Анастасия. Все права защищены.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year">2026</span> Анастасия Райцева. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
