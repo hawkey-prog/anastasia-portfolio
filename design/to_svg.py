@@ -9,15 +9,22 @@
 #
 # Готовые файлы кладутся в design/. Открывать в Figma, Illustrator, Inkscape.
 
-import sys, base64, pathlib, mimetypes, html
+import sys, io, base64, pathlib, mimetypes, html
 from playwright.sync_api import sync_playwright
+from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 JS = r"""
 (sel) => {
-  const root = document.querySelector(sel);
-  const base = root.getBoundingClientRect();
+  const roots = [...document.querySelectorAll(sel)];
+  const rs = roots.map(el => el.getBoundingClientRect());
+  const base = {
+    x: Math.min(...rs.map(r => r.x)),
+    y: Math.min(...rs.map(r => r.y)),
+    width: Math.max(...rs.map(r => r.right)) - Math.min(...rs.map(r => r.x)),
+    height: Math.max(...rs.map(r => r.bottom)) - Math.min(...rs.map(r => r.y)),
+  };
   const cv = document.createElement('canvas').getContext('2d');
   const boxes = [], texts = [], images = [], lines = [];
 
@@ -88,7 +95,7 @@ JS = r"""
       }
     }
   };
-  walk(root);
+  roots.forEach(walk);
   return {w: base.width, h: base.height, boxes, texts, images, lines,
           page: getComputedStyle(document.body).backgroundColor};
 }
@@ -97,6 +104,26 @@ JS = r"""
 
 def esc(s):
     return html.escape(s, quote=False)
+
+
+def shrink(path, w, h, factor=2):
+    """Ужимает картинку до двойного экранного размера: иначе SVG с пятью
+    снимками работ весит десяток мегабайт и редактор его не тянет."""
+    raw = path.read_bytes()
+    try:
+        img = Image.open(io.BytesIO(raw))
+        tw, th = int(w * factor), int(h * factor)
+        if img.width <= tw and img.height <= th:
+            return raw
+        img.thumbnail((tw, th), Image.LANCZOS)
+        buf = io.BytesIO()
+        if path.suffix.lower() in (".jpg", ".jpeg"):
+            img.convert("RGB").save(buf, "JPEG", quality=88)
+        else:
+            img.save(buf, "PNG", optimize=True)
+        return buf.getvalue()
+    except Exception:
+        return raw
 
 
 def build(data, out_path):
@@ -116,7 +143,7 @@ def build(data, out_path):
     for im in data["images"]:
         src = ROOT / im["src"]
         mime = mimetypes.guess_type(src.name)[0] or "image/png"
-        b64 = base64.b64encode(src.read_bytes()).decode()
+        b64 = base64.b64encode(shrink(src, im["w"], im["h"])).decode()
         tr = ""
         if im["transform"] and im["transform"] != "none":
             ox, oy = (im["origin"] or "0px 0px").split()[:2]
