@@ -3,308 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Анастасия — разработчик Telegram-ботов, сайтов и 1С. Автоматизация бизнеса под ключ: боты для записи, автоворонки, таплинки, лендинги, интеграции.">
-    <meta name="keywords" content="telegram бот, разработка ботов, таплинк, лендинг, 1с, автоматизация бизнеса, сайт визитка, автоворонка">
-    <meta property="og:title" content="Анастасия — Разработка Telegram-ботов и сайтов">
-    <meta property="og:description" content="Автоматизирую бизнес: Telegram-боты, сайты-таплинки, 1С. Под ключ, от идеи до запуска.">
+    <meta name="description" content="Анастасия Райцева. Собираю сайты-таплинки для частных мастеров и небольшого бизнеса: одна страница с работами, ценами и кнопкой связи. Telegram-боты для записи и заказов. Доработки 1С.">
+    <meta name="keywords" content="таплинк, сайт таплинк, страница по ссылке, сайт визитка, telegram бот, бот для записи, онлайн меню, 1с унф, разработчик">
+    <meta property="og:title" content="Анастасия Райцева. Сайты-таплинки и Telegram-боты">
+    <meta property="og:description" content="Одна страница вместо десяти хайлайтов: работы, цены, кнопка связи. Плюс боты для записи и заказов.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hawkey-prog.github.io">
-    <title>Анастасия Райцева — Telegram-боты, сайты, 1С | Технический партнёр для бизнеса</title>
+    <meta name="theme-color" content="#17161B">
+    <title>Анастасия Райцева. Сайты-таплинки и Telegram-боты</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Шапка / Hero -->
-    <header class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="hero-content container">
-            <div class="hero-text">
-                <div class="hero-badge">⚡ Доступна для новых проектов</div>
-                <h1>Анастасия<span class="hero-accent">.</span></h1>
-                <p class="hero-subtitle">Разработчик Telegram-ботов, сайтов и 1С</p>
-                <p class="hero-description">Превращаю бизнес-задачи в работающие цифровые инструменты. От идеи до запуска — в одних руках.</p>
-                <div class="hero-buttons">
-                    <a href="https://t.me/hawkey_17" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-telegram"></i> Обсудить проект
-                    </a>
-                    <a href="#services" class="btn btn-outline">
-                        <i class="fas fa-arrow-down"></i> Мои услуги
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-num">3+</span>
-                        <span class="stat-label">года фриланса</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num">30+</span>
-                        <span class="stat-label">проектов</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num">14</span>
-                        <span class="stat-label">дней поддержки</span>
-                    </div>
-                </div>
+<div class="wrap">
+
+    <div class="topbar">
+        <span>@_hawkey_17</span>
+        <span>разработка · 1С · боты · сайты</span>
+    </div>
+
+    <!-- Шапка -->
+    <header class="card hero">
+        <img class="hero-photo" src="images/hero.png" alt="Анастасия Райцева">
+        <div class="hero-text">
+            <h1>Сайты-таплинки<span class="accent">и боты</span></h1>
+            <p class="lead">Собираю в одну страницу то, что разложено по хайлайтам: работы, форматы, цены и кнопку связи. Её можно прислать одной ссылкой.</p>
+            <div class="btns">
+                <a class="btn" href="https://t.me/hawkey_17" target="_blank" rel="noopener">Написать в Telegram <span class="arw">&#8594;</span></a>
+                <a class="btn btn-ghost" href="#works">Посмотреть работы <span class="arw">&#8594;</span></a>
             </div>
-            <div class="hero-visual">
-                <div class="hero-card">
-                    <div class="hero-card-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="hero-card-body">
-                        <div class="code-line"><span class="code-key">const</span> developer = {</div>
-                        <div class="code-line code-indent">name: <span class="code-str">'Анастасия'</span>,</div>
-                        <div class="code-line code-indent">stack: [<span class="code-str">'Python'</span>, <span class="code-str">'1С'</span>, <span class="code-str">'Telegram API'</span>],</div>
-                        <div class="code-line code-indent">focus: <span class="code-str">'Автоматизация бизнеса'</span>,</div>
-                        <div class="code-line code-indent">available: <span class="code-bool">true</span></div>
-                        <div class="code-line">}</div>
-                        <div class="code-cursor"></div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="facts">
+            <span><b>3-5 дней</b> на страницу</span>
+            <span><b>14 дней</b> поддержки после сдачи</span>
+            <span><b>10:00-21:00</b> на связи, мск</span>
         </div>
     </header>
 
-    <main>
-
-        <!-- Услуги -->
-        <section class="section" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">УСЛУГИ</span>
-                    <h2>Что я делаю</h2>
-                    <p>Полный цикл разработки — от технического задания до запуска и поддержки</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fab fa-telegram"></i></div>
-                        <h3>Telegram-боты</h3>
-                        <div class="service-price">от 5 000 ₽</div>
-                        <ul class="service-list">
-                            <li>Запись на услуги 24/7</li>
-                            <li>Автоворонки продаж</li>
-                            <li>Рассылки и напоминания</li>
-                            <li>Приём оплаты в боте</li>
-                            <li>Интеграции: CRM, таблицы, базы</li>
-                        </ul>
-                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <div class="service-card service-card-accent">
-                        <div class="service-icon"><i class="fas fa-globe"></i></div>
-                        <h3>Сайты и таплинки</h3>
-                        <div class="service-price">от 5 000 ₽</div>
-                        <ul class="service-list">
-                            <li>Лендинги под рекламу</li>
-                            <li>Сайты-визитки</li>
-                            <li>Онлайн-меню для кафе</li>
-                            <li>Адаптивный дизайн</li>
-                            <li>Кнопки связи в один клик</li>
-                        </ul>
-                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-database"></i></div>
-                        <h3>Разработка 1С</h3>
-                        <div class="service-price">1 500 ₽/час</div>
-                        <ul class="service-list">
-                            <li>Доработка конфигураций</li>
-                            <li>УТ, УНФ, БП, ЗУП</li>
-                            <li>Интеграция 1С с Telegram</li>
-                            <li>Разовые задачи и поддержка</li>
-                            <li>Автоматизация рутины</li>
-                        </ul>
-                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
-                        <h3>Интернет-магазины</h3>
-                        <div class="service-price">от 15 000 ₽</div>
-                        <ul class="service-list">
-                            <li>Каталог с корзиной</li>
-                            <li>Оформление заказа онлайн</li>
-                            <li>Приём платежей</li>
-                            <li>Уведомления в Telegram</li>
-                            <li>Адаптив под мобильные</li>
-                        </ul>
-                        <a href="https://t.me/hawkey_17" class="service-link" target="_blank">Заказать <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Процесс работы -->
-        <section class="section section-dark" id="process">
-            <div class="container">
-                <div class="section-header section-header-light">
-                    <span class="section-tag">ПРОЦЕСС</span>
-                    <h2>Как мы будем работать</h2>
-                    <p>Прозрачный процесс — вы всегда знаете, на каком этапе проект</p>
-                </div>
-                <div class="process-timeline">
-                    <div class="process-item">
-                        <div class="process-num">01</div>
-                        <div class="process-body">
-                            <h3>Обсуждение</h3>
-                            <p>Бесплатная консультация 30 минут. Определяем цели, задачи и рамки проекта.</p>
-                        </div>
-                    </div>
-                    <div class="process-item">
-                        <div class="process-num">02</div>
-                        <div class="process-body">
-                            <h3>Анализ и ТЗ</h3>
-                            <p>Изучаю задачу, предлагаю решение. Составляем техническое задание.</p>
-                        </div>
-                    </div>
-                    <div class="process-item">
-                        <div class="process-num">03</div>
-                        <div class="process-body">
-                            <h3>Разработка</h3>
-                            <p>Пишу код, согласую этапы. Регулярные отчёты о прогрессе.</p>
-                        </div>
-                    </div>
-                    <div class="process-item">
-                        <div class="process-num">04</div>
-                        <div class="process-body">
-                            <h3>Запуск</h3>
-                            <p>Тестирую, передаю проект, обучаю пользоваться.</p>
-                        </div>
-                    </div>
-                    <div class="process-item">
-                        <div class="process-num">05</div>
-                        <div class="process-body">
-                            <h3>Поддержка</h3>
-                            <p>Сопровождаю 14 дней после сдачи. Правки и вопросы — на связи.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Для кого -->
-        <section class="section" id="audience">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">КЛИЕНТЫ</span>
-                    <h2>Для кого я работаю</h2>
-                    <p>Помогаю бизнесу зарабатывать больше через автоматизацию</p>
-                </div>
-                <div class="audience-grid">
-                    <div class="audience-card">
-                        <div class="audience-emoji">💇</div>
-                        <h3>Салоны и SPA</h3>
-                        <p>Запись 24/7, напоминания, снижение неявок</p>
-                    </div>
-                    <div class="audience-card">
-                        <div class="audience-emoji">☕</div>
-                        <h3>Кафе и рестораны</h3>
-                        <p>Онлайн-меню, заказ доставки, таплинк</p>
-                    </div>
-                    <div class="audience-card">
-                        <div class="audience-emoji">🎓</div>
-                        <h3>Эксперты и школы</h3>
-                        <p>Автоворонки, продажа курсов, прогрев</p>
-                    </div>
-                    <div class="audience-card">
-                        <div class="audience-emoji">🛍</div>
-                        <h3>Магазины</h3>
-                        <p>Каталог в Telegram, заказы, уведомления</p>
-                    </div>
-                    <div class="audience-card">
-                        <div class="audience-emoji">🔧</div>
-                        <h3>Частные мастера</h3>
-                        <p>Запись, прайс, портфолио в одном боте</p>
-                    </div>
-                    <div class="audience-card">
-                        <div class="audience-emoji">🏢</div>
-                        <h3>Бизнес с 1С</h3>
-                        <p>Доработки, интеграции, автоматизация</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="section section-light" id="faq">
-            <div class="container container-narrow">
-                <div class="section-header">
-                    <span class="section-tag">FAQ</span>
-                    <h2>Частые вопросы</h2>
-                </div>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary>Сколько времени занимает разработка?</summary>
-                        <p>Простой бот или таплинк — 3–5 дней. Сложный проект с интеграциями — 1–2 недели. Точные сроки называю после обсуждения задачи.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Можно ли что-то поменять после запуска?</summary>
-                        <p>Да. 14 дней поддержки бесплатно после сдачи. Дальше — по договорённости. Также могу обучить вас самостоятельному внесению правок.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Работаете с другими городами?</summary>
-                        <p>Да, работаю полностью дистанционно. Вся коммуникация — через Telegram. Созвон по видео при необходимости.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Если у меня нет ТЗ?</summary>
-                        <p>Не проблема. Разберём вашу задачу вместе, я помогу составить ТЗ. Это бесплатно и ни к чему не обязывает.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Как происходит оплата?</summary>
-                        <p>Обычно: 50% предоплата, 50% после сдачи. Для крупных проектов — поэтапная оплата. Работаю по договорённости.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-card">
-                    <h2>Готовы автоматизировать бизнес?</h2>
-                    <p>Напишите мне в Telegram — обсудим задачу за 15 минут. Бесплатно и ни к чему не обязывает.</p>
-                    <a href="https://t.me/hawkey_17" class="btn btn-primary btn-large" target="_blank">
-                        <i class="fab fa-telegram"></i> Написать в Telegram
-                    </a>
-                    <div class="cta-info">
-                        <span><i class="far fa-clock"></i> Отвечаю 10:00–21:00 МСК</span>
-                        <span><i class="fas fa-map-marker-alt"></i> Дистанционно, по всей России</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Подвал -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">Анастасия Райцева</div>
-                    <p>Технический партнёр для роста вашего бизнеса</p>
-                </div>
-                <div class="footer-nav">
-                    <a href="#services">Услуги</a>
-                    <a href="#process">Процесс</a>
-                    <a href="#faq">Вопросы</a>
-                    <a href="https://t.me/hawkey_17" target="_blank">Telegram</a>
-                    <a href="mailto:nastushkarom@gmail.com">Email</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© <span id="current-year">2026</span> Анастасия Райцева. Все права защищены.</p>
+    <!-- Кто я -->
+    <section class="card" id="about">
+        <h2>Кто я</h2>
+        <div class="rule"></div>
+        <div class="about">
+            <img src="images/avatar.jpg" alt="Анастасия Райцева">
+            <div>
+                <p>Меня зовут Анастасия, в разработке больше пяти лет. Окончила бакалавриат и магистратуру по направлению «Прикладная математика и информатика» с красным дипломом.</p>
+                <p>Два года работала в найме: сначала вдвоём со старшим коллегой на задачах выше своего уровня, потом в крупной компании с отлаженными процессами. Оттуда ушла на фриланс, потому что такой формат работы оказался не моим.</p>
+                <p class="muted">Гибко подхожу к выбору инструментов, чтобы решение было оптимальным для клиента.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Что я делаю -->
+    <section class="card" id="services">
+        <h2>Что я делаю</h2>
+        <div class="rule"></div>
+        <div class="stack">
+            <div class="item">
+                <div>
+                    <h3>Сайты-таплинки</h3>
+                    <p>Работы, форматы и цены на одной странице. Кнопки связи в один тап, открывается с телефона</p>
+                </div>
+                <span class="price">от 6 000 ₽</span>
+            </div>
+            <div class="item">
+                <div>
+                    <h3>Telegram-боты</h3>
+                    <p>Запись круглосуточно, напоминания, приём заказов и оплаты, ответы на частые вопросы</p>
+                </div>
+                <span class="price">от 8 000 ₽</span>
+            </div>
+            <div class="item">
+                <div>
+                    <h3>Интернет-магазины</h3>
+                    <p>Каталог с корзиной, оформление заказа онлайн, приём платежей, уведомления в Telegram</p>
+                </div>
+                <span class="price">от 15 000 ₽</span>
+            </div>
+            <div class="item">
+                <div>
+                    <h3>Доработки 1С</h3>
+                    <p>УНФ, УТ, БП, ЗУП. Расширения конфигураций, отчёты и печатные формы, обмен с Telegram</p>
+                </div>
+                <span class="price">1 500 ₽/час</span>
+            </div>
+        </div>
+        <div class="rows" style="margin-top:34px">
+            <div><b>Чаще всего приходят</b></div>
+            <div><span>Частные мастера: запись, прайс и портфолио в одном месте</span></div>
+            <div><span>Кафе и кондитерские: онлайн-меню и заказ</span></div>
+            <div><span>Салоны и студии: запись и напоминания</span></div>
+            <div><span>Бизнес на 1С: доработки конфигураций и обмен данными</span></div>
+        </div>
+    </section>
+
+    <!-- Работы -->
+    <section class="card-dark" id="works">
+        <h2>Как выглядят<span class="accent">страницы</span></h2>
+        <p class="lead muted">Пять демонстрационных страниц под разные профессии. Каждый сделан в своей структуре и типографике.</p>
+        <div class="works">
+            <a class="work" href="images/works/1-fotograf-full.png" target="_blank" rel="noopener">
+                <img src="images/works/1-fotograf.png" alt="Демонстрационная страница фотографа" loading="lazy">
+                <div>
+                    <h3>Фотограф</h3>
+                    <p>Гранж: чёрно-белые кадры, интерфейс видоискателя, прайс в рамке</p>
+                    <span class="open">Открыть целиком <span class="arw">&#8594;</span></span>
+                </div>
+            </a>
+            <a class="work" href="images/works/2-psiholog-full.png" target="_blank" rel="noopener">
+                <img src="images/works/2-psiholog.png" alt="Демонстрационная страница психолога" loading="lazy">
+                <div>
+                    <h3>Психолог и эксперт</h3>
+                    <p>Бордо с золотом, центральная ось, антиква, работа по шагам</p>
+                    <span class="open">Открыть целиком <span class="arw">&#8594;</span></span>
+                </div>
+            </a>
+            <a class="work" href="images/works/3-vizazhist-full.png" target="_blank" rel="noopener">
+                <img src="images/works/3-vizazhist.png" alt="Демонстрационная страница визажиста" loading="lazy">
+                <div>
+                    <h3>Визажист и стилист</h3>
+                    <p>Минимал: много воздуха, кадр во всю ширину, прайс строкой</p>
+                    <span class="open">Открыть целиком <span class="arw">&#8594;</span></span>
+                </div>
+            </a>
+            <a class="work" href="images/works/4-konditer-full.png" target="_blank" rel="noopener">
+                <img src="images/works/4-konditer.png" alt="Демонстрационная страница кондитера" loading="lazy">
+                <div>
+                    <h3>Кондитер и кафе</h3>
+                    <p>Охра и терракота, меню строками с миниатюрами, расчёт заказа</p>
+                    <span class="open">Открыть целиком <span class="arw">&#8594;</span></span>
+                </div>
+            </a>
+            <a class="work" href="images/works/5-detskiy-full.png" target="_blank" rel="noopener">
+                <img src="images/works/5-detskiy.png" alt="Демонстрационная страница детского центра" loading="lazy">
+                <div>
+                    <h3>Детский центр</h3>
+                    <p>Шалфейная гамма, крупные радиусы, лента групп по возрастам</p>
+                    <span class="open">Открыть целиком <span class="arw">&#8594;</span></span>
+                </div>
+            </a>
+        </div>
+        <p class="note">Снимки на страницах служебные.</p>
+    </section>
+
+    <!-- Как работаем -->
+    <section class="card" id="process">
+        <h2>Как<span class="accent">работаем</span></h2>
+        <div class="steps">
+            <div class="step">
+                <span class="num">01</span>
+                <div>
+                    <h3>Разбираем задачу</h3>
+                    <p>Пятнадцать минут разговора. Что у вас сейчас происходит с записью и заказами, что мешает. Бесплатно и ни к чему не обязывает.</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="num">02</span>
+                <div>
+                    <h3>Договариваемся о составе</h3>
+                    <p>Что войдёт, что останется на потом. Называю срок и цену, дальше они не меняются.</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="num">03</span>
+                <div>
+                    <h3>Собираю</h3>
+                    <p>Показываю по частям, а не в конце. Правки вносим по ходу, пока всё не встанет на место.</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="num">04</span>
+                <div>
+                    <h3>Передаю</h3>
+                    <p>Показываю, как пользоваться и что менять самостоятельно.</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="num">05</span>
+                <div>
+                    <h3>Остаюсь на связи</h3>
+                    <p>14 дней после сдачи правки и вопросы бесплатно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вопросы -->
+    <section class="card" id="faq">
+        <h2>Частые вопросы</h2>
+        <div class="rule"></div>
+        <div class="faq">
+            <details>
+                <summary>Сколько это займёт</summary>
+                <p>Простой бот или таплинк, 3-5 дней. Проект со связкой с таблицами или 1С, одна-две недели. Точный срок называю после разбора задачи.</p>
+            </details>
+            <details>
+                <summary>Можно ли что-то поменять после запуска</summary>
+                <p>Да. 14 дней поддержки бесплатно, дальше по договорённости. Могу и показать, как вносить правки самостоятельно.</p>
+            </details>
+            <details>
+                <summary>Работаете с другими городами</summary>
+                <p>Да, работаю дистанционно. Общение идёт в Telegram, при необходимости созваниваемся по видео.</p>
+            </details>
+            <details>
+                <summary>У меня нет технического задания</summary>
+                <p>Это нормально, оно почти никогда не готово заранее. Разберём задачу вместе, я помогу его составить.</p>
+            </details>
+            <details>
+                <summary>Как происходит оплата</summary>
+                <p>Обычно 50% предоплата и 50% после сдачи. Крупные проекты делим на этапы. Работаю как самозанятая, чек присылаю.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="card-dark contact" id="contact">
+        <h2>Нужен<span class="accent">разработчик?</span></h2>
+        <p class="lead muted">Расскажите, что у вас сейчас происходит с записью и заказами. Разберём за пятнадцать минут, бесплатно и ни к чему не обязывает.</p>
+        <div class="btns">
+            <a class="btn btn-light" href="https://t.me/hawkey_17" target="_blank" rel="noopener">Написать в Telegram <span class="arw">&#8594;</span></a>
+            <a class="btn btn-light" href="https://www.instagram.com/_hawkey_17/" target="_blank" rel="noopener">Instagram <span class="arw">&#8594;</span></a>
+        </div>
+        <p class="when">Отвечаю с 10:00 до 21:00 по московскому времени. Почта: <a href="mailto:nastushkarom@gmail.com">nastushkarom@gmail.com</a></p>
+    </section>
+
+    <footer class="foot">
+        <span>&copy; <span id="year">2026</span> Анастасия Райцева. Сайты-таплинки, боты, 1С</span>
+        <nav>
+            <a href="#about">Кто я</a>
+            <a href="#services">Услуги</a>
+            <a href="#works">Работы</a>
+            <a href="#faq">Вопросы</a>
+            <a href="https://t.me/hawkey_17" target="_blank" rel="noopener">Telegram</a>
+        </nav>
     </footer>
 
-    <script src="script.js"></script>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
