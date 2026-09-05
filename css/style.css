@@ -148,6 +148,7 @@ h2 { font-size: clamp(1.9rem, 4.4vw, 2.6rem); margin-bottom: 22px; }
     border: 1px solid var(--ink);
     transition: color 0.2s ease, background 0.2s ease;
 }
+.btn sup { font-size: 0.75em; line-height: 0; }
 .btn .arw { transition: transform 0.2s ease; }
 .btn:hover .arw { transform: translateX(4px); }
 
@@ -229,6 +230,15 @@ h2 { font-size: clamp(1.9rem, 4.4vw, 2.6rem); margin-bottom: 22px; }
 .contact .lead { margin-bottom: 28px; }
 .contact .when { margin-top: 24px; color: var(--muted-light); font-size: 0.93rem; }
 
+/* === СНОСКА === */
+.legal {
+    max-width: 76ch;
+    padding: 36px 0 0;
+    color: var(--muted-dark);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
 /* === ПОДВАЛ === */
 .foot {
     display: flex;
@@ -291,7 +301,8 @@ h2 { font-size: clamp(1.9rem, 4.4vw, 2.6rem); margin-bottom: 22px; }
     .step { grid-template-columns: 44px 1fr; gap: 14px; padding: 16px 0; }
     .step .num { font-size: 1.3rem; }
     .works { grid-template-columns: 1fr; }
-    .foot { padding: 28px 0 44px; }
+    .legal { padding-top: 28px; font-size: 0.78rem; }
+    .foot { padding: 24px 0 44px; }
     .foot nav { gap: 14px 18px; }
 }
 
